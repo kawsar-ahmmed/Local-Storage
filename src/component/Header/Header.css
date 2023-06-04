@@ -1,0 +1,14 @@
+.nav-main {
+    background: lightgray;
+}
+.nav-main .navbar-text a {
+    color: green;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 0px 10px;
+
+}
+.nav-main .navbar-text .active {
+    color: green;
+    font-weight: bold;
+}
