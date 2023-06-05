@@ -10,12 +10,14 @@ const Cart = ({ cart, handleClearCart }) => {
 
     return (
         <div className='cart-container'>
-            <h1>Thsi is cart</h1>
-            <Button onClick={handleClearCart}><FontAwesomeIcon icon={faClose}></FontAwesomeIcon></Button>
+            <div className="order-summry">
+                <h2>Order Summery</h2>
+                <Button onClick={handleClearCart}><FontAwesomeIcon icon={faClose}></FontAwesomeIcon></Button>
+            </div>
             {
                 cart.map(item => <div className="cart-contianer">
                     <div className="cart-image">
-                        <img src={item.pairImage} alt="" height={50} />
+                        <img src={item.pairImage} alt="" height={80} />
                     </div>
                     <div className="cart-content">
                         <h3>{item.name}</h3>
