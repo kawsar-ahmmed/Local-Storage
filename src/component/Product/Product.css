@@ -3,9 +3,11 @@
     border: 1px solid gainsboro;
 
 }
-.product-image {
 
+.product-image {
+    padding: 10px;
 }
+
 .product-content {
     display: flex;
     justify-content: space-between;
@@ -13,11 +15,13 @@
     background: black;
     padding: 15px;
 }
+
 .product-content h2 {
     font-size: 26px;
     font-weight: bold;
     color: #fff;
 }
+
 .product-content h3 {
     color: #fff;
     font-size: 18px;
@@ -25,9 +29,9 @@
 }
 
 .product-content button {
-border: none;
-background: orange;
-color: #fff;
-font-size: 18px;
-padding: 15px 22px;
+    border: none;
+    background: orange;
+    color: #fff;
+    font-size: 18px;
+    padding: 15px 22px;
 }

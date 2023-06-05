@@ -6,7 +6,7 @@ import { Link, NavLink } from 'react-router-dom';
 const Header = () => {
     return (
         <>
-            <Navbar className='nav-main'>
+            <Navbar className='nav-main sticky-top'>
                 <Container>
                     <Navbar.Brand as={Link} to="/">Navbar with text</Navbar.Brand>
                     <Navbar.Toggle />
