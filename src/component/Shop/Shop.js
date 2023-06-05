@@ -12,12 +12,13 @@ const Shop = () => {
             .then(data => setProducts(data))
     }, [])
     const handlAddToCart = (selectedProduct) => {
-        setCart([selectedProduct])
+        const newCart = [...cart, selectedProduct]
+        setCart(newCart)
     }
-    console.log(cart)
+    // console.log(cart)
 
     const handleClearCart = () => {
-        console.log('Cart clear')
+        setCart([]);
     }
     return (
         <Container>
@@ -36,6 +37,7 @@ const Shop = () => {
                     </Row>
                 </Col>
                 <Col lg={3} className='mt-5'>
+                    
                     <Cart
                         cart={cart}
                         products={products}
