@@ -18,7 +18,7 @@ const Shop = () => {
     // console.log(cart)
 
     const handleClearCart = () => {
-        setCart([]);
+        setCart([])
     }
     return (
         <Container>
